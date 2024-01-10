@@ -1,0 +1,106 @@
+/*------Herramientas generales------*/
+body{
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+}
+.inline {
+    display: inline;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.text-center {
+    text-align: center;
+}
+
+
+
+/*-------HEADER-----*/
+
+header {
+    height: 50px;
+    background-color: #285b35;
+}
+.verde a {
+    color: white;
+    text-decoration: none;
+}
+.verde {
+    height: 50px;
+    width: 94%;
+    margin: 0 auto;
+}
+
+.blanco {
+      height: 70px;
+    width: 94%;
+    margin: 0 auto;
+}
+
+/*------NAV------*/
+    nav   ul, nav li {
+    margin: 0px;
+    padding: 0px;}
+    
+    nav ul li {
+    margin: 10px;
+    float: left;
+    list-style-type: none;
+    position: relative;}
+    
+    nav ul li ul {
+    width: 100px;
+    display: none;
+    position: absolute;}
+    
+    nav ul li a {
+        color: gray;
+    }
+    nav ul li:hover a {
+        color: #009933;
+    }
+    nav ul li:hover ul a {
+        color: gray;
+    }
+    nav ul li:hover ul li:hover a {
+        color: black;
+    }
+
+    nav ul li:hover ul {
+    display: block;
+    background-color: white;
+
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+
+/*mal  nav>ul>(li>a)*6>ul>(li>a{Celda})*5*/
+
+/*  nav>ul>(li>a>ul>(li>a{Celda})*5)*6  */
+
+
+/*------MAIN------*/
+
+.bg-grande {
+    margin-top: 70px;
+    height: 500px;
+    background-image: url(../img/coviran-bustamante.png);
+    background-size: cover;
+}
