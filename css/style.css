@@ -26,6 +26,10 @@ body{
 .text-center {
     text-align: center;
 }
+.container {
+    margin: 0 auto;
+    width: 94%;
+}
 
 
 
@@ -44,51 +48,72 @@ header {
     width: 94%;
     margin: 0 auto;
 }
+.izquierda img {
+    padding-right: 5px;
+}
+.derecha img {
+    padding-left: 5px;
+}
 
 .blanco {
       height: 70px;
     width: 94%;
     margin: 0 auto;
 }
+.blanco img {
+    padding-right: 5%;
+}
+.py-20 {
+    padding: 20px 0;
+}
 
 /*------NAV------*/
-    nav   ul, nav li {
-    margin: 0px;
-    padding: 0px;}
-    
-    nav ul li {
-    margin: 10px;
-    float: left;
-    list-style-type: none;
-    position: relative;}
-    
-    nav ul li ul {
-    width: 100px;
-    display: none;
-    position: absolute;}
-    
-    nav ul li a {
-        color: gray;
-    }
-    nav ul li:hover a {
-        color: #009933;
-    }
-    nav ul li:hover ul a {
-        color: gray;
-    }
-    nav ul li:hover ul li:hover a {
-        color: black;
-    }
+nav   ul, nav li {
+margin: 0px;
+padding: 0px;}
 
-    nav ul li:hover ul {
+nav ul li {
+padding: 10px;
+float: left;
+list-style-type: none;
+position: relative;
+}
+
+nav ul li ul {
+display: none;
+position: absolute;}
+
+nav ul li:hover ul {
+    z-index: 1;
+    margin:10px -10px;
     display: block;
     background-color: white;
 
-    }
+}
+nav ul li:hover ul li {
+    width: 250px;
+    border-top: solid 1px gainsboro;
 
-    nav a {
-        text-decoration: none;
-    }
+}
+nav ul li:hover ul li:hover {
+    background-color: gainsboro;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: gray;
+}
+nav li:hover a {
+    color: #297b3c;
+}
+nav li:hover li a {
+    color: gray;
+}
+nav li:hover li:hover a {
+    color: black;
+}
+
 
 
 /*mal  nav>ul>(li>a)*6>ul>(li>a{Celda})*5*/
@@ -100,7 +125,81 @@ header {
 
 .bg-grande {
     margin-top: 70px;
-    height: 500px;
+    height: 550px;
     background-image: url(../img/coviran-bustamante.png);
     background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+img[src="img/fanta.png"] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3000px;
+   
+}
+.bg-grande:hover img[src="img/fanta.png"] {
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 1s;
+}
+
+/*----NOTICIAS----*/
+.col-3 {
+    margin: 20px 0;
+    width: 32%;
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+    position: relative;
+}
+.col-3 p {
+    text-align: center;
+    font-size: large;
+    margin: 0 10px;
+}
+.col-3 img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.cristal {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0);
+}
+.cristal:hover {
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.363);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+
+/*------FOOTER-----*/
+.verde2 {
+    background-color: #297b3c;
+}
+.col-4 {
+    color: white;
+    font-size: 20px;
+    width: 24%;
+}
+.col-4 p {
+    padding-left: 5%;
+}
+
+.verde3 {
+    background-color: #285b35;
+
+}
+img[src="img/patrocinadores1.png"] {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer .verde3 p {
+    padding: 20px 0;
+    color: white;
 }
