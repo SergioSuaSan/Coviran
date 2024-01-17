@@ -136,12 +136,12 @@ img[src="img/fanta.png"] {
     top: 50%;
     transform: translateY(-50%);
     left: 3000px;
+    transition: 1s;
    
 }
 .bg-grande:hover img[src="img/fanta.png"] {
     left: 50%;
     transform: translate(-50%,-50%);
-    transition: 1s;
 }
 
 /*----NOTICIAS----*/
